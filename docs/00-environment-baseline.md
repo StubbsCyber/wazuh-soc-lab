@@ -12,9 +12,9 @@ The focus is on visibility, log ingestion, and agent connectivity rather than in
 - IP Address:
 
 ### Services Status
-- wazuh-manager:
-- wazuh-indexer:
-- wazuh-dashboard:
+- wazuh-manager: Running
+- wazuh-indexer: Running
+- wazuh-dashboard: Running
 
 ## Endpoints
 ### Windows Endpoint 1
