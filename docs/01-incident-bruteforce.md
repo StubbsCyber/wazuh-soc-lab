@@ -13,3 +13,18 @@
 
 ## Assessment
 The activity was confirmed as expected behavior generated during controlled lab testing. No indicators of compromise or unauthorized access were identified.
+
+## Related Reconnaissance Activity
+### Sysmon Process Creation – Account Enumeration
+
+During review of endpoint telemetry, additional process execution activity was observed following authentication failures.
+
+- Event Source: Sysmon
+- Event ID: 1 (Process Create)
+- Process: net1.exe
+- Command Executed: `net user`
+- Parent Process: cmd.exe
+- User Context: Local interactive user
+- Integrity Level: Medium
+
+This activity represents local account enumeration, which is commonly observed during reconnaissance phases of an intrusion. In this lab, the behavior was generated intentionally to validate command-line visibility and process lineage.
