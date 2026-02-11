@@ -18,10 +18,10 @@ The focus is on visibility, log ingestion, and agent connectivity rather than in
 
 ## Endpoints
 ### Windows Endpoint 1
-- Hostname:
-- OS Version:
-- Wazuh Agent Status:
-- Sysmon Installed: Yes / No
+- Hostname: windows10-sysmon
+- OS Version: Windows 10 Pro 10.0.19045.6456
+- Wazuh Agent Status: Active
+- Sysmon Installed: Yes 
 
 ### Windows Endpoint 2
 - Hostname:
