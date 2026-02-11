@@ -6,10 +6,10 @@ The focus is on visibility, log ingestion, and agent connectivity rather than in
 
 ## Wazuh SIEM
 - Deployment Type: All-in-One
-- Operating System:
-- Wazuh Version:
-- Hostname:
-- IP Address:
+- Operating System: Linux
+- Wazuh Version: 4.14.1
+- Hostname: wazuh-server
+- IP Address: 192.168.17.128
 
 ### Services Status
 - wazuh-manager: Running
@@ -21,31 +21,11 @@ The focus is on visibility, log ingestion, and agent connectivity rather than in
 - Hostname: windows10-sysmon
 - OS Version: Windows 10 Pro 10.0.19045.6456
 - Wazuh Agent Status: Active
-- Sysmon Installed: Yes 
-
-### Windows Endpoint 2
-- Hostname:
-- OS Version:
-- Wazuh Agent Status:
-- Sysmon Installed: Yes / No
+- Sysmon Installed: Yes
 
 ## Initial Observations
 - Agents connectivity status
 - Logs currently visible
 - Any gaps identified
 
-## Detection
-- SIEM: Wazuh
-- Rule Triggered: Logon Failure – Unknown user or bad password
-- Rule ID: 60122
-- Severity Level: 5
-- Associated Windows Event ID: 4625
 
-## Investigation
-- Source: Local Windows endpoint
-- Agent: windows10-sysmon
-- Activity: Multiple failed authentication attempts
-- Pattern: Repeated logon failures over a short time window
-
-## Assessment
-The activity was confirmed as expected behavior generated during controlled lab testing. No indicators of compromise or unauthorized access were identified.
